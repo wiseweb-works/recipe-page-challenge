@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --font-primary: "Outfit", sans-serif;
+  --font-secondary: "Young Serif", serif;
+  --weight-regular: 400;
+  --weight-medium: 600;
+  --weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  display: grid;
+  place-content: center;
+  background-color: var(--stone-100);
+  min-height: 100vh;
+  position: relative;
+}
+
+main {
+  background-color: var(--white);
+  border-radius: 1.25rem;
+  max-width: 70ch;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding-inline: 2rem;
+}
+
+section {
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: var(--weight-medium);
+}
+
+h1,
+h2 {
+  font-family: var(--font-secondary);
+  margin: 1.5rem 0 1rem;
+}
+
+.preparation {
+  background-color: var(--rose-50);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+section .heading {
+  color: var(--rose-800);
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+  font-weight: var(--weight-bold);
+
+  font-family: "Outfit", sans-serif;
+}
+
+.instructions,
+.ingredients {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.ingredients ul {
+  list-style-type: square;
+}
+
+.instructions ol {
+  padding-left: 1.5rem;
+}
+
+.instructions b {
+  color: var(--stone-900);
+}
+
+section h2 {
+  color: var(--brown-800);
+  font-weight: var(--weight-regular);
+}
+
+.preparation ul {
+  padding-left: 1.75rem;
+}
+
+section ul,
+ol {
+  padding: 0 1rem;
+}
+
+section li {
+  padding: 0.5rem;
+}
+
+::marker {
+  color: var(--brown-800);
+  font-weight: var(--weight-bold);
+}
+
+table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+td,
+th {
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+th {
+  text-align: start;
+  font-weight: var(--weight-regular);
+  color: var(--stone-600);
+}
+
+td:nth-child(even) {
+  color: var(--brown-800);
+  font-weight: 900;
+}
+
+tr:last-child td {
+  border: none;
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    padding: 8rem;
+  }
+
+  .container {
+    padding-inline: 2.25rem;
+  }
+
+  .hero {
+    padding: 2.25rem 2.25rem 0;
+  }
+
+  img {
+    border-radius: 0.75rem;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+
+  .preparation {
+    padding: 1.5rem 2rem;
+  }
+  .attribution {
+    font-size: 1rem;
+  }
+}
